@@ -1,0 +1,37 @@
+git --version
+git config --global user.name mr-indonesia
+git config --global user.email secretcode190@gmail.com
+cd Documents
+ls
+mkdir BasicGit
+git init
+git status
+git add .
+git status
+git rm --cached Index.html
+
+git commit -m "First Commit"
+git add . [coba rubah default.html]
+git commit -m "Update header"
+git log
+git log --oneline
+
+git checkout 2fe19de
+git revert 2fe19de
+
+git branch johanbrch
+git branch -a
+git checkout johanbrch
+git branch -D johanbrch
+git checkout -b feature_a
+
+git merge feature_a
+
+
+--Push dan Clone Ke github
+git push https://github.com/mr-indonesia/BasicWebForm.git master
+git remote add origin https://github.com/mr-indonesia/BasicWebForm.git
+git push origin master
+
+git clone https://github.com/mr-indonesia/BasicRepo.git
+git remote -v
